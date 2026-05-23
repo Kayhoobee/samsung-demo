@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung - Electronics & Technology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(31, 2, 2, 0.4), rgba(0,0,0,0.6)), url('https://static1.anpoimages.com/wordpress/wp-content/uploads/2020/09/16/SamsungLogoHero-01.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .product-card {
+            transition: all 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(172, 44, 44, 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Demo Banner -->
+    <div class="bg-blue-900 text-white text-center py-3 text-lg font-bold tracking-widest">
+        DEMO WEBSITE BY FIDELIS
+    </div>
+
+    <!-- Header -->
+    <header class="bg-black text-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between px-6 py-4">
+                <div class="flex items-center gap-8">
+                    <h1 class="text-3xl font-bold tracking-tighter">SAMSUNG</h1>
+                    <nav class="hidden md:flex items-center gap-6 text-sm">
+                        <a href="#" class="hover:text-gray-300">Mobile</a>
+                        <a href="#" class="hover:text-gray-300">TV & AV</a>
+                        <a href="#" class="hover:text-gray-300">Home Appliances</a>
+                        <a href="#" class="hover:text-gray-300">Computing</a>
+                        <a href="#" class="hover:text-gray-300">Galaxy AI</a>
+                    </nav>
+                </div>
+                
+                <div class="flex items-center gap-6">
+                    <button onclick="toggleSearch()" class="hover:text-gray-300"><i class="fa-solid fa-magnifying-glass text-xl"></i></button>
+                    <a href="#" class="hover:text-gray-300"><i class="fa-solid fa-user text-xl"></i></a>
+                    <a href="#" class="hover:text-gray-300"><i class="fa-solid fa-bag-shopping text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-bg h-screen flex items-center text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-6xl md:text-7xl font-bold mb-4">Galaxy S25 Ultra</h2>
+            <p class="text-2xl mb-8">The next era of mobile intelligence</p>
+            <div class="flex gap-4 justify-center">
+                <button onclick="alert('Learn more about Galaxy S25!')" 
+                        class="bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-gray-200 transition">
+                    Learn More
+                </button>
+                <button onclick="alert('Added to wishlist')" 
+                        class="border-2 border-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-black transition">
+                    Pre-order Now
+                </button>
+            </div>
+        </div>
+    </section>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+    <!-- Smartphones -->
+    <div class="text-center group cursor-pointer">
+        <div class="bg-gray-100 h-64 rounded-3xl overflow-hidden">
+            <img 
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1000&auto=format&fit=crop"
+                alt="Smartphones"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+            >
+        </div>
+        <p class="font-semibold mt-4">Smartphones</p>
+    </div>
+
+    <!-- Televisions -->
+    <div class="text-center group cursor-pointer">
+        <div class="bg-gray-100 h-64 rounded-3xl overflow-hidden">
+            <img 
+                src="https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=1000&auto=format&fit=crop"
+                alt="Televisions"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+            >
+        </div>
+        <p class="font-semibold mt-4">Televisions</p>
+    </div>
+
+    <!-- Home Appliances -->
+    <div class="text-center group cursor-pointer">
+        <div class="bg-gray-100 h-64 rounded-3xl overflow-hidden">
+            <img 
+                src="https://tse1.mm.bing.net/th/id/OIP.OhM1TxSdKtrzzPMUb3btsQAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Home Appliances"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+            >
+        </div>
+        <p class="font-semibold mt-4">Home Appliances</p>
+    </div>
+
+    <!-- Laptops & Tablets -->
+    <div class="text-center group cursor-pointer">
+        <div class="bg-gray-100 h-64 rounded-3xl overflow-hidden">
+            <img 
+                src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1000&auto=format&fit=crop"
+                alt="Laptops"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+            >
+        </div>
+        <p class="font-semibold mt-4">Laptops & Tablets</p>
+    </div>
+
+</div>
+
+    <!-- Featured Products -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-10">Featured Products</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="product-card bg-white rounded-3xl overflow-hidden">
+                    <img src="https://cdn.renderhub.com/madmix/samsung-galaxy-s24-ultra/samsung-galaxy-s24-ultra-01.jpg"
+     class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <span class="text-blue-600 text-sm font-medium">New</span>
+                        <h3 class="text-2xl font-bold mt-2">Galaxy S25 Ultra</h3>
+                        <p class="text-gray-600 mt-2">AI-powered. Titanium design.</p>
+                        <p class="text-3xl font-bold mt-6">#1,299,665</p>
+                        <button class="mt-6 w-full bg-black text-white py-4 rounded-2xl hover:bg-gray-800">Buy Now</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card bg-white rounded-3xl overflow-hidden">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.2DzASPfupmfHAVTOeQlOawHaGj?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    <div class="p-6">
+                        <span class="text-purple-600 text-sm font-medium">Best Seller</span>
+                        <h3 class="text-2xl font-bold mt-2">55" OLED 4K TV</h3>
+                        <p class="text-gray-600 mt-2">Stunning picture. Smart Hub.</p>
+                        <p class="text-3xl font-bold mt-6">#2,499,455</p>
+                        <button class="mt-6 w-full bg-black text-white py-4 rounded-2xl hover:bg-gray-800">Buy Now</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card bg-white rounded-3xl overflow-hidden">
+                    <img src="https://th.bing.com/th/id/R.4e6b56be13232273bcdff5d6028abbf1?rik=HSVqv8rI8%2fJIbQ&pid=ImgRaw&r=0" 
+                    <div class="p-6">
+                        <span class="text-green-600 text-sm font-medium">Eco</span>
+                        <h3 class="text-2xl font-bold mt-2">Bespoke Refrigerator</h3>
+                        <p class="text-gray-600 mt-2">Customizable. AI Energy.</p>
+                        <p class="text-3xl font-bold mt-6">#3,299,000</p>
+                        <button class="mt-6 w-full bg-black text-white py-4 rounded-2xl hover:bg-gray-800">Buy Now</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">SAMSUNG</h3>
+                <p class="text-sm">Inspired by you. Driven by innovation.</p>
+            </div>
+            <div>
+                <h4 class="text-white mb-4">Products</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white">Galaxy Phones</a></li>
+                    <li><a href="#" class="hover:text-white">TVs</a></li>
+                    <li><a href="#" class="hover:text-white">Home Appliances</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white mb-4">Support</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-white">Product Support</a></li>
+                    <li><a href="#" class="hover:text-white">Warranty</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white mb-4">Company</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white">About Samsung</a></li>
+                    <li><a href="#" class="hover:text-white">Newsroom</a></li>
+                    <li><a href="#" class="hover:text-white">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center text-xs mt-12 border-t border-gray-800 pt-8">
+            © 2026 Samsung Electronics. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        function toggleSearch() {
+            alert("Search functionality would go here in a real site.");
+        }
+        
+        // Simple smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
