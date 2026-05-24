@@ -11,7 +11,8 @@ Features:
 - Featured products section
 - Hover animations
 - Modern UI design
+- cart and checkout option
 
 Created by Edefo Fidelis
 # samsung-demo
-Demo website showcasing what i can do.
+Demo website showcasing how i can make a website for a brand to showcase products.
